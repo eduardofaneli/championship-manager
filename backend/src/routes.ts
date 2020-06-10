@@ -5,6 +5,6 @@ const routes = express.Router();
 
 const raffleController = new RaffleController;
 
-routes.get('/', raffleController.index);
+routes.get('/matches', raffleController.index);
 
 export default routes;
