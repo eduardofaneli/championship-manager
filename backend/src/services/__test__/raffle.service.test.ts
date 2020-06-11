@@ -1,6 +1,6 @@
 import Chance from 'chance';
 import raffle from '../raffle.service';
-import Player from '../../models/Player';
+import Player from '../../models/player.model';
 
 const users = [
   "castrolol",

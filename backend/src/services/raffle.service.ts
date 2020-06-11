@@ -1,9 +1,9 @@
 import Chance from 'chance';
-import Player from '../models/Player';
+import Player from '../models/player.model';
 import { v4 as uuid } from 'uuid';
 
 function raffle(users: string[]): Player[] {
-
+  
   const chance = raffle._chanceInstance;
 
   let result: Player[] = [];
@@ -44,7 +44,6 @@ function raffle(users: string[]): Player[] {
       fights[candidate].count++;
       fights[candidate].match.fights.push(user);
     });
-
 
   })
 
